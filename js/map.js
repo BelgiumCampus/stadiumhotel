@@ -105,7 +105,7 @@ function initMap() {
   });
   bayworld.addListener('click', function() {
       new google.maps.InfoWindow({
-          content: "<div><h3>Bayworld Museum, Oceanarium & Snake Park</h3><p>Read more about Bayworld <a href='http://www.bayworld.co.za/' target='_blank'>here</a>.</p></div>"
+          content: "<div><h3>Bayworld Museum, Oceanarium &amp; Snake Park</h3><p>Read more about Bayworld <a href='http://www.bayworld.co.za/' target='_blank'>here</a>.</p></div>"
       }).open(map, bayworld);
   });
     //10. stadium
