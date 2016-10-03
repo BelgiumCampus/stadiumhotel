@@ -5,7 +5,6 @@
 
 
 /* RESET */
-
 *,
 h1,
 h2,
@@ -78,12 +77,14 @@ nav ul li a:hover {
     border-bottom: 1px solid grey;
 }
 
-.font-weight-md {
-    font-weight: 600;
+.margin-lg{
+    margin: 1.5em 0em;
 }
 
-main {
-    height: 80vh; /*for testing*/
+
+
+.font-weight-md {
+    font-weight: 600;
 }
 
 .full-height {
@@ -249,10 +250,6 @@ main {
 
 html, body {
     height: 100%;
-}
-
-main {
-    height: 100vh;
 }
 
 .padding-top-bottom {
