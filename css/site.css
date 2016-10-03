@@ -1,6 +1,250 @@
 @font-face {
-    font-family: "bank";
-    src: url("../content/OPTIBankGothic-Medium") format("opentype");
+    font-family: 'bank';
+    src: url("content/fonts/OPTIBankGothic-Medium") format("opentype");
+}
+
+
+/* RESET */
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.2em;
+    min-height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+header {
+    padding: 2em;
+    height: auto;
+}
+
+header .row {
+    padding: 1em;
+}
+
+.stadium-logo img {
+    width: 60%;
+    height: 60%;
+}
+
+.border {
+    border: 1px solid;
+}
+
+
+/* NAV */
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    margin: auto 0;
+    position: relative;
+    float: left;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+}
+
+nav ul li {
+    width: calc(100% / 3);
+    float: left;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+nav ul li a {
+    padding: .5em;
+    color: #373737;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid grey;
+}
+
+.font-weight-md {
+    font-weight: 600;
+}
+
+main {
+    height: 80vh; /*for testing*/
+}
+
+.full-height {
+    height: 100%;
+}
+
+.footer-section {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.footer-section .container footer h1 {
+    padding-top: 1em;
+}
+
+.footer-section .container footer h6 {
+    padding: .5em;
+}
+
+.footer-section form.form-horizontal,
+.footer-section .form-control {
+    margin: 1em;
+}
+
+.footer-section textarea {
+    min-height: 8em;
+}
+
+.padding-lg {
+    padding: 1em;
+    padding-bottom: 0.5em;
+}
+
+.footer-section a {
+    color: #C0B283;
+}
+
+.footer-section a:hover {
+    color: #C0B283;
+    text-decoration: none;
+}
+
+.foot-notes {
+    padding-top: 1em;
+    padding-bottom: .5em;
+    font-size: 0.9em;
+}
+
+.footer-section .underline {
+    display: inline-block;
+    width: 5em;
+    margin: 1em auto;
+    position: relative;
+    height: 1px;
+    background-color: whitesmoke;
+}
+
+
+/* HELPERS */
+
+.show-menu {
+    height: auto !important;
+    max-height: 300px !important;
+    overflow: hidden;
+    animation: nav-slide-down 1s ease-in;
+}
+
+
+/*COLOURS*/
+
+.grey-color {
+    color: gray;
+}
+
+.charcoal-bg {
+    background-color: #373737;
+    color: whitesmoke;
+}
+
+
+/*BOOTSTRAP*/
+
+.form-control {
+    border-radius: 0px;
+}
+
+@media only screen and (max-width: 320px) {
+    .stadium-logo img {
+        width: 100%;
+        height: 100%;
+    }
+    .mobile-toggle h3 {
+        padding: .5em;
+        border-bottom: 2px solid grey;
+        border-top: 2px solid grey;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 759px) {
+    .stadium-logo {
+        width: 100%;
+        height: 100%;
+    }
+    .mobile-toggle h3 {
+        padding: 1em;
+        border-bottom: 2px solid grey;
+        border-top: 1px solid grey;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 759px) {
+    .mobile-toggle h3,
+    .mobile-toggle a {
+        color: grey;
+    }
+    .mobile-toggle a:hover {
+        text-decoration: none;
+        color: black;
+        border: none;
+        cursor: pointer;
+    }
+    nav ul {
+        padding: 0px !important;
+        max-height: 0px !important;
+        overflow: hidden;
+        border-bottom: 1px solid grey;
+    }
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid grey;
+    }
+    nav ul li a:hover {
+        border: none;
+    }
+    .hide-menu {
+        height: auto;
+        max-height: 0px;
+        animation: nav-slide-up 1s ease-out;
+    }
+}
+
+
+/* KEYFRAMES */
+
+@keyframes nav-slide-down {
+    0% {
+        max-height: 0px;
+    }
+    100% {
+        max-height: 300px;
+    }
+}
+
+@keyframes nav-slide-up {
+    0% {
+        max-height: 300px;
+    }
+    100% {
+        max-height: 0px;
+    }
 }
 
 .padding-top-bottom {
