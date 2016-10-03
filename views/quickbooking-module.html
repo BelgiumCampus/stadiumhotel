@@ -1,0 +1,45 @@
+<div class="container tile-color-1">
+    <div style="justify-content: space-around; display: flex;" class="row  padding-top-bottom">
+       
+        <div style="align-self: center;" class="col-md-3 padding-left-right  input-group date" id="arrivaldatepicker">
+            <input style="padding: 20px;" type="text" class="no-border-radius form-control" placeholder="Arrival Date" />
+            <span class="no-border-radius input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+        </div>
+        <div style="align-self: center;" class=" col-md-3 padding-left-right  input-group dat padding-left-right  input-group date" id="departdatepicker">
+            <input style="padding: 20px;" type="text" class="no-border-radius form-control" placeholder="Departure Date" />
+            <span class="no-border-radius input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+        </div>
+
+        <div style="align-self: center;" class="col-md-2 padding-left-right  input-group dat padding-left-right input-group">
+            <input style="padding: 20px;" type="text" class="form-control" placeholder="No of Persons" />
+        </div>
+
+        <div style="align-self: center;" class="col-md-2 padding-left-right  input-group dat padding-left-right input-group">
+            <a style="border-style:none; width: 100%; padding: 15px;" class="tile-color-2 no-border-radius btn btn-primary btn-default  ">Book Now </a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            $(function () {
+                $('#arrivaldatepicker').datepicker({
+                    showOn: "both",
+                    autoclose: "true"
+                });
+            })
+
+            $(function () {
+                $('#departdatepicker').datepicker({
+                    showOn: "both",
+                    autoclose: "true"
+                });
+            })
+        });
+    </script>
+</div>
