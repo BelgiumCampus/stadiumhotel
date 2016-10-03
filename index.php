@@ -1,44 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
-        <link rel="stylesheet" href="css/site.css" type="text/css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css"/>
-        <!--todo: proper favicon-->
-        <link rel="icon" href="content/stadium-hotel-logo.jpg" type="text/css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <script src="js/jquery-3.1.0.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/bootstrap-datepicker.min.js"></script>
-        <title>The Stadium Hotel</title>
-    </head>
-    <body>
-       
-        <header>
-            <!--contact details and logo-->
-            <nav>
-                <!--navigation-->
-            </nav>
-        </header>
-        <main>
-            <section>
-                <!--quick booking-->
-                <?php
-                    include 'views/quickbooking-module.html';
-                ?>
-            </section>
-            <section>
-                <?php
+<?php require('views/header.html') ?>
+
+
+<div class="col-lg-8 col-md-10 col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-2">
+
+</div>
+<main class="col-lg-8 col-md-10 col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-2">
+    <section class="margin-lg container-fluid">
+        <?php include 'views/quickbooking-module.html';?>
+    </section>
+    <section class="margin-lg container-fluid">
+        <?php
                     include 'views/tile-module.html';
                 ?>
-            </section>
-            <section>
-                <!--contact form-->
-            </section>
-        </main>
-        <footer>
-            <!--copyright, date and links-->
-        </footer>
- 
-    </body>
-</html>
+    </section>
+</main>
+
+<?php require('views/footer.html') ?>
