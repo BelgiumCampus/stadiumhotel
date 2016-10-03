@@ -96,26 +96,27 @@ function initMap() {
           content: "<div><h3>Boardwalk Hotel and Casino</h3><p>Read more about the Boardwalk Hotel and Casino <a href='https://www.suninternational.com/boardwalk/' target='_blank'>here</a>.</p></div>"
       }).open(map, casino);
   });
-    //9. airforce museum
-  var airforce = new google.maps.Marker({
-      position: {lat: -33.989534, lng: 25.617878},
+    //9. bayworld
+  var bayworld = new google.maps.Marker({
+      //get coords
+      position: {lat: -33.977854, lng: 25.648400},
       map: map,
-      title: 'South African Air Force Museum'
+      title: 'Bayworld'
   });
-  airforce.addListener('click', function() {
+  bayworld.addListener('click', function() {
       new google.maps.InfoWindow({
-          content: "<div><h3>South African Air Force Museum</h3><p>Read more about the South African Air Force Museum <a href='http://saafmuseum.org.za/' target='_blank'>here</a>.</p></div>"
-      }).open(map, airforce);
+          content: "<div><h3>Bayworld Museum, Oceanarium & Snake Park</h3><p>Read more about Bayworld <a href='http://www.bayworld.co.za/' target='_blank'>here</a>.</p></div>"
+      }).open(map, bayworld);
   });
-    //10. penguin rescue
-  var samrec = new google.maps.Marker({
-      position: {lat: -34.013455, lng: 25.690610},
+    //10. stadium
+  var stadium = new google.maps.Marker({
+      position: {lat: -33.937935, lng: 25.599354},
       map: map,
-      title: 'Samrec Penguin Rescue Station'
+      title: 'Nelson Mandela Bay Stadium'
   });
-  samrec.addListener('click', function() {
+  stadium.addListener('click', function() {
       new google.maps.InfoWindow({
-          content: "<div><h3>Samrec Penguin Rescue Station</h3><p>Read more about the Samrec Penguin Rescue Station <a href='http://www.samrec.org.za' target='_blank'>here</a>.</p></div>"
-      }).open(map, samrec);
+          content: "<div><h3>Nelson Mandela Bay Stadium</h3><p>Read more about the Nelson Mandela Bay Stadium <a href='http://www.nmbstadium.com/' target='_blank'>here</a>.</p></div>"
+      }).open(map, stadium);
   });
 }

@@ -4,7 +4,6 @@
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
         <link rel="stylesheet" href="css/site.css" type="text/css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css"/>
-<!--        <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">-->
         <!--todo: proper favicon-->
         <link rel="icon" href="content/stadium-hotel-logo.jpg" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -24,7 +23,7 @@
         <main>
             <section>
                 <!--quick booking-->
-                 <?php
+                <?php
                     include 'views/quickbooking-module.html';
                 ?>
             </section>

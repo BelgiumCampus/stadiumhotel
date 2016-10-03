@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "bank";
+    src: url("../content/OPTIBankGothic-Medium") format("opentype");
+}
+
+<<<<<<< HEAD
+html, body {
+    height: 100%;
+}
+
+main {
+    height: 100vh;
+=======
+.padding-top-bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.padding-left-right {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.no-border-radius {
+    border-radius: 0px;
+>>>>>>> a53e04a320d5ad092c3b2bd59c365705e95b6bad
+}
+
+.border {
+    border: 3px #fff solid;
+}
+
+.tile-sm {
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px #fff solid; 
+    display: flex;
+}
+
+.tile-lg {
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px #fff solid;
+    display: flex;
+}
+
+.tile-content{
+    margin: auto;
+    text-align: center;
+}
+
+.tile-color-1 {
+    background-color: #0B3C5D;
+    color: #F4F4F4;    
+}
+
+.tile-color-2 {
+    background-color: #1d2731;
+    color: #F4F4F4;    
+}
+
+.tile-color-3 {
+    background-color: #d9b310;
+    color: #F4F4F4;    
+}
+
+.odd-tile {
+    margin-top: -100px;
+}
+
+.icon {
+    font-size: 4em !important;
+}
+
+.img-tile {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    background-size: cover;    
+}
+
+.sliding-banner {
+    -webkit-transition: width 3s ease;
+    transition: width 3s ease;
+    padding: 10px;
+    border-top: 3px #fff solid; 
+    border-right: 3px #fff solid; 
+    border-bottom: 3px #fff solid; 
+}
+.sliding-banner:hover {
+    width: 100%;
+}
+
+
+#smoke-tile:hover, #bar-tile:hover, #stadium-tile:hover, #parking-tile:hover, #room-tile:hover, #bayworld-tile:hover, #park-tile:hover, #conference-tile:hover, #laundry-tile:hover {
+     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+
+#smoke-tile {
+    background-image: url(../content/smoke.jpg);
+}
+
+
+#bar-tile {
+    background-image: url(../content/bar.jpg);
+}
+
+#stadium-tile {
+    background-image: url(../content/nelson-mandela-bay-stadium.jpg);
+}
+
+#parking-tile {
+    background-image: url(../content/parking.jpg);
+}
+
+#room-tile {
+    background-image: url(../content/purple-bed.jpg);
+    background-size: cover;
+}
+
+#bayworld-tile {
+    background-image: url(../content/bayworld.jpg);
+}
+
+#park-tile {
+    background-image: url(../content/st-georges-park-conservatory.jpg);
+}
+
+#conference-tile {
+    background-image: url(../content/conference.jpg);
+}
+
+#laundry-tile {
+    background-image: url(../content/laundry.jpg);
+}
+
+#map {
+    height: 70vh;
+    padding: 0px;
+}
