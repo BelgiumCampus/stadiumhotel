@@ -12,7 +12,10 @@
       </div>
       <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
-              <div id="map" class="col-lg-6 col-md-6" ></div>
+              <div class="col-lg-6 col-md-6" >
+                  <section id="map" class="col-lg-9 col-lg-offset-3">
+                  </section>
+              </div>
               <div id="poi" class="col-lg-6 col-md-6">
                   <section id="main-points">
                       <h3>Main Points of Interest</h3>
@@ -21,7 +24,6 @@
                               <p>
                                   1km (12 minute walk) from Nelson Mandela Bay Stadium. <a href="http://www.nmbstadium.com/" target="_blank"><i class="fa fa-arrow-right"></i></a>  
                               </p>
-                              <p>
                           </div>
                       </div>
                       <div class="row">
@@ -74,7 +76,6 @@
                               <p>
                                   26km from	Auto Pavilion. <a href="http://www.autopavilion.co.za/home.htm" target="_blank"><i class="fa fa-arrow-right"></i></a>  
                               </p>
-                              <p>
                           </div>
                       </div>                              
                   </section>
