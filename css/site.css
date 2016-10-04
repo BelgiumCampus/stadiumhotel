@@ -60,7 +60,7 @@ nav ul {
 }
 
 nav ul li {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     float: left;
     font-size: 1.5em;
     padding: 1em;
@@ -313,7 +313,8 @@ html, body {
 }
 
 .icon {
-    font-size: 4em !important;
+    font-size: 3em !important;
+    margin: auto;
 }
 
 .img-tile {
@@ -343,41 +344,41 @@ html, body {
 }
 
 #smoke-tile {
-    background-image: url(../content/smoke.jpg);
+    background-image: url(../content/images/smoke.jpg);
 }
 
 
 #bar-tile {
-    background-image: url(../content/bar.jpg);
+    background-image: url(../content/images/bar.jpg);
 }
 
 #stadium-tile {
-    background-image: url(../content/nelson-mandela-bay-stadium.jpg);
+    background-image: url(../content/images/nelson-mandela-bay-stadium.jpg);
 }
 
 #parking-tile {
-    background-image: url(../content/parking.jpg);
+    background-image: url(../content/images/parking.jpg);
 }
 
 #room-tile {
-    background-image: url(../content/purple-bed.jpg);
+    background-image: url(../content/images/purple-bed.jpg);
     background-size: cover;
 }
 
 #bayworld-tile {
-    background-image: url(../content/bayworld.jpg);
+    background-image: url(../content/images/bayworld.jpg);
 }
 
 #park-tile {
-    background-image: url(../content/st-georges-park-conservatory.jpg);
+    background-image: url(../content/images/st-georges-park-conservatory.jpg);
 }
 
 #conference-tile {
-    background-image: url(../content/conference.jpg);
+    background-image: url(../content/images/conference.jpg);
 }
 
 #laundry-tile {
-    background-image: url(../content/laundry.jpg);
+    background-image: url(../content/images/laundry.jpg);
 }
 
 #map {
