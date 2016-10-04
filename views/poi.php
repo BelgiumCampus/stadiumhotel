@@ -48,7 +48,7 @@
                               <div class="row">
                                   <div class="col-lg-9 sliding-banner tile-color-2">
                                       <p>
-                                          9km from Bayworld Museum, Oceanarium & Snake Park. <a href="http://www.bayworld.co.za/" target="_blank"><i class="fa fa-arrow-right"></i></a>
+                                          9km from Bayworld Museum, Oceanarium &amp; Snake Park. <a href="http://www.bayworld.co.za/" target="_blank"><i class="fa fa-arrow-right"></i></a>
                                       </p> 
                                   </div>
                               </div>
