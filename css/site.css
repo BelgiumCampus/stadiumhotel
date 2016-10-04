@@ -388,6 +388,7 @@ html, body {
 }
 
 #map {
-    height: 70vh;
+    height: 57vh;
     padding: 0px;
+    margin-bottom: 15px;
 }
