@@ -28,7 +28,7 @@ body {
     font-size: 1.2em;
     min-height: 100%;
     width: 100%;
-    background-color: rgba(245,245,245,0);
+    background-color: rgba(245,245,245,0.4);
 }
 
 header {
@@ -46,7 +46,7 @@ header a {
 }
 
 header a:hover {
-    color: grey; 
+    color: #181735; 
 }
 
 a {
@@ -57,9 +57,10 @@ a {
 
 a:active {
     color: #17876C;
+    text-decoration: none;
 }
 
-a:hover {
+a:hover, .active-page {
     background-color: #FDC304;
     color: #181735;
     text-decoration: none;
@@ -107,7 +108,6 @@ nav ul li a:hover {
 .margin-lg{
     margin: 1.5em 0em;
 }
-
 
 
 .font-weight-md {
@@ -360,15 +360,19 @@ nav ul li a:hover {
 .sliding-banner {
     -webkit-transition: width 3s ease;
     transition: width 1s ease;
-    padding: 10px;
+    padding: 12px;
     background-clip: padding-box;
     border-top: 5px rgba(245,245,245, 0) solid; 
     border-bottom: 5px rgba(245,245,245, 0) solid; 
     display: flex;
 }
 
-.sliding-banner p{
+.sliding-banner a {
     margin: auto;
+    float: left;
+}
+.sliding-banner p {
+    margin: 0px;
 }
 
 .sliding-banner:hover {
