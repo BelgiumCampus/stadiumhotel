@@ -19,13 +19,16 @@ h6 {
 html {
     width: 100%;
     height: 100%;
+    background-image: url(../content/images/ruffles.png);
+    background-repeat: repeat;
+
 }
 
 body {
     font-size: 1.2em;
     min-height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: rgba(245,245,245,0);
 }
 
 header {
@@ -254,10 +257,6 @@ nav ul li a:hover {
     }
 }
 
-html, body {
-    height: 100%;
-}
-
 .padding-top-bottom {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -281,7 +280,7 @@ html, body {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 3px whitesmoke solid; 
+    border: 5px rgb(245,245,245) solid; 
     display: flex;
 }
 
@@ -290,7 +289,7 @@ html, body {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 3px whitesmoke solid;
+    border: 5px rgb(245,245,245) solid;
     display: flex;
 }
 
@@ -300,17 +299,17 @@ html, body {
 }
 
 .tile-color-1 {
-    background-color: #0B3C5D;
-    color: #F4F4F4;    
+    background-color: rgba(2,1,34,.9);
+    color: #F4F4F4; 
 }
 
 .tile-color-2 {
-    background-color: #1d2731;
+    background-color: rgba(202, 51, 2,0.9);
     color: #F4F4F4;    
 }
 
 .tile-color-3 {
-    background-color: #d9b310;
+    background-color: rgba(0, 125, 95,.9);
     color: #F4F4F4;    
 }
 
