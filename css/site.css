@@ -359,12 +359,17 @@ nav ul li a:hover {
 
 .sliding-banner {
     -webkit-transition: width 3s ease;
-    transition: width 3s ease;
+    transition: width 1s ease;
     padding: 10px;
-    border-top: 3px whitesmoke solid; 
-    border-right: 3px whitesmoke solid; 
-    border-bottom: 3px whitesmoke solid; 
+    background-clip: padding-box;
+    border-top: 5px rgba(245,245,245, 0) solid; 
+    border-bottom: 5px rgba(245,245,245, 0) solid; 
 }
+
+.sliding-banner i {
+    float: right;
+}
+
 .sliding-banner:hover {
     width: 100%;
 }
@@ -414,7 +419,7 @@ nav ul li a:hover {
 }
 
 #map {
-    height: 57vh;
+    height: 65vh;
     padding: 0px;
     margin-bottom: 15px;
 }
