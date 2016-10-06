@@ -4,7 +4,7 @@
             <div class="col-lg-4 tile-color-3 tile-lg room-tile">
                 <div class="tile-content price">
                     <h2>Standard Room</h2>
-                    <h6>R500 or R250 per person sharing</h6>
+                    <h6>R520 or R260 per person sharing</h6>
                 </div>
                 <div class="tile-content descr" hidden="">
                     <p>Standard rooms have a double bed OR two single beds with a full bathroom, a television and a telephone.</p>
@@ -14,7 +14,7 @@
             <div class="col-lg-4 tile-color-3 tile-lg room-tile">
                 <div class="tile-content price">
                     <h2>Student Room</h2>
-                    <h6>R500 or R250 per person sharing</h6>
+                    <h6>R520 or R260 per person sharing</h6>
                 </div>
                 <div class="tile-content descr" hidden="">
                     <p>Student rooms have two sets of bunk beds and two separate showers, a television and a telephone.</p>
