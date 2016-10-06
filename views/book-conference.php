@@ -1,7 +1,3 @@
-<?php 
-    require('views/header.html');
-?>
-
     <main>
         <div class="padding-bottom-lg row">
             <form data-toggle="validator" class="form-horizontal">
@@ -178,7 +174,3 @@
 
         </div>
     </main>
-
-    <?php
-    require('views/footer.html');
-?>
