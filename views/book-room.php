@@ -1,7 +1,7 @@
 <main class="padding-bottom-lg">
 
     <div class="row">
-        <form data-toggle="validator" class="form-horizontal col-lg-8 col-lg-offset-2 booking-form" id="booking-form">
+        <form data-toggle="validator" class="form-horizontal col-lg-12 booking-form" id="booking-form">
             <fieldset class="">
                 <!-- Form Name -->
                 <h3 class="padding-top-bottom text-center">Book Your Rooms</h3>
