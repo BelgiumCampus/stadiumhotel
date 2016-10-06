@@ -2,13 +2,8 @@
     include_once('views/header.html');
 ?>
 
-<?php
-    include_once('views/book-room.php')
-?>
-
-<?php
-    include_once('views/book-conference.php')
-?>
+<section id="booking-page">
+</section>
 
 <?php
     include_once('views/footer.html');

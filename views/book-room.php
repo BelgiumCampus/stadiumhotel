@@ -1,5 +1,5 @@
-<main>
-    <div class="row">
+<main class="padding-bottom-lg">
+    <div class="row ">
         <div class="col-lg-offset-2 col-lg-8">
             <div class="col-lg-4 tile-color-3 tile-lg room-tile">
                 <div class="tile-content price">
