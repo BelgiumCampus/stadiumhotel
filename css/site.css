@@ -89,7 +89,7 @@ nav ul {
 }
 
 nav ul li {
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     float: left;
     font-size: 1.5em;
     padding: 1em;
@@ -366,6 +366,24 @@ input[type="checkbox"], input[type="radio"] {
 
 .border {
     border: 3px #fff solid;
+}
+
+.booking-tabs {
+    background-color: rebeccapurple;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px rgba(245,245,245,0) solid;
+    background-clip: padding-box;
+    display: flex;
+}
+
+.booking-tabs a {
+    color: rgba(2, 1, 34, 1);    
+}
+
+.booking-tabs:hover , .booking-tabs a:hover, .booking-tabs > .tile-content:hover {
+    background-color: rgba(202, 51, 2, 0.8); 
 }
 
 .tile-sm {

@@ -1,7 +1,7 @@
 <main>
     <div class="padding-bottom-lg row">
         <form data-toggle="validator" class="form-horizontal">
-            <fieldset class="col-lg-8 col-lg-offset-2 booking-form">
+            <fieldset class="col-lg-12 booking-form">
 
                 <!-- Form Name -->
                 <h3 class="padding-top-bottom text-center">Build your conference</h3>
