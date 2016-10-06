@@ -10,6 +10,13 @@
             
             
         })
+        
+        $(function () {
+            $('#conferencedatepicker').datepicker({
+                showOn: "both",
+                autoclose: "true"
+            });
+        })
 
         $(function () {
             $('#arrivaldatepicker').datepicker({
