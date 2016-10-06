@@ -2,7 +2,7 @@
     <div class="padding-bottom-lg row">
 
         <form class="form-horizontal">
-            <fieldset class="col-md-8 col-md-offset-2 booking-form">
+            <fieldset class="col-lg-8 col-lg-offset-2 booking-form">
 
                 <!-- Form Name -->
                 <h3 class="padding-top-bottom text-center">Build your conference</h3>

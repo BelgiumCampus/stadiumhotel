@@ -40,7 +40,7 @@ header .row {
     padding: 1em;
 }
 
-header a {
+header a, .room-tile a {
     color: grey;
     transition:all 0.5s ease;  
 }
@@ -309,7 +309,9 @@ fieldset h3 {
     padding: 0px;
 }
 
-
+.input-group-addon{
+    border-radius: 0px;
+}
 
 .no-border-radius {
     border-radius: 0px;
