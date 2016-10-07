@@ -1,16 +1,16 @@
 (function () {
     $('document').ready(function () {
-        
+
         var url = window.location.pathname.split('/');
-        var currentPage = url[url.length-1];
+        var currentPage = url[url.length - 1];
+        if (currentPage.lastIndexOf('.php')) currentPage = 'index.php';
+
         $('[href="' + currentPage + '"]').addClass('active-page');
-        
+
         $('body').on('click', '.mobile-toggle a', function () {
             $('nav ul').toggleClass('show-menu hide-menu');
-            
-            
         })
-        
+
         $(function () {
             $('#conferencedatepicker').datepicker({
                 showOn: "both",
