@@ -37,8 +37,8 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="room">Room</label>
                         <div class="col-md-7">
-                            <select name = "room" class="form-control input-md" required>
-                                <option value="">Select a room...</option>
+                            <select id="room" name="room" class="form-control input-md" required>
+                                <option selected value="default">Select a room...</option>
                                 <option value="standard">Standard</option>
                                 <option value="student">Student</option>
                                 <option value="suite">Suite</option>
