@@ -34,6 +34,7 @@
 <script src="js/validator.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-clockpicker.min.js"></script>
 <script src="js/app/app.js"></script>
 <script src="js/booking.js"></script>
 </body>
