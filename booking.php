@@ -7,8 +7,12 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- Nav tabs -->
                     <ul class="nav padding-bottom-lg " role="tablist">
-                        <li role="presentation" class="active col-lg-2 tile-color-2 booking-tabs"><a class="tile-content" href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab">Rooms</a></li>
-                        <li role="presentation" class="col-lg-2 tile-color-2 booking-tabs"><a class="tile-content" href="#conferences" aria-controls="conferences" role="tab" data-toggle="tab">Conferences</a></li>
+          <li role="presentation" class="active col-lg-2 ">
+                <a class="booking-tabs tile-content" href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab">Rooms</a>
+          </li>
+          <li role="presentation" class="col-lg-2">
+            <a class="tile-content booking-tabs" href="#conferences" aria-controls="conferences" role="tab" data-toggle="tab">Conferences</a>
+          </li>
                     </ul>
 
                     <!-- Tab panes -->

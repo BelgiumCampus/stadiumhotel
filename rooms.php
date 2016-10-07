@@ -11,7 +11,7 @@
                 </div>
                 <div class="tile-content descr" hidden="">
                     <p>Standard rooms have a double bed OR two single beds with a full bathroom, a television and a telephone.</p>
-                    <a href="booking.php#booking-form" onclick="makeBooking('standard')">Book now <i class="fa fa-arrow-right"></i></a>
+                    <a href="booking.php?room=standard">Book now <i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 tile-color-3 tile-lg room-tile">
@@ -39,5 +39,5 @@
     <hr/>
 </main>
 <?php
-    include_once('views/footer.html');
+    include_once('views/footer.php');
 ?>
