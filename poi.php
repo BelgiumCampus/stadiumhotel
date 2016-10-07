@@ -93,5 +93,5 @@
 <script src="js/map.js">
 </script>
 <?php
-    require('views/footer.html');
+    require('views/footer.php');
 ?>
