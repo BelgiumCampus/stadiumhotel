@@ -330,6 +330,11 @@ input[type="checkbox"], input[type="radio"] {
     font-size: 1.1em;
 }
 
+.margin-top-bottom {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 .padding-top-bottom {
     padding-top: 20px;
     padding-bottom: 20px;
