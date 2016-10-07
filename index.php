@@ -1,20 +1,19 @@
-<?php 
+<?php
+    require_once 'server/Autoload.php';
     require('views/header.html');
 ?>
-<main class="container-fluid">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-2">
-            <section class="margin-lg">
-                <?php include 'views/quickbooking-module.html'; ?>
-            </section>
-            <section class="margin-lg">
-                <br/>
-                <br/>
-                <?php include 'views/tile-module.html'; ?>
-            </section>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-2">
+                <section class="margin-lg">
+                    <?php include 'views/quickbooking-module.html'; ?>
+                </section>
+                <section class="margin-lg">
+                    <?php include 'views/tile-module.html'; ?>
+                </section>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 <?php
-    require('views/footer.html');
+    require_once 'views/footer.php';
 ?>

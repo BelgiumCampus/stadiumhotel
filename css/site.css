@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    position: relative;
     font-size: 1.2em;
     min-height: 100%;
     width: 100%;
@@ -111,7 +112,7 @@ fieldset h3 {
 }
 
 .margin-lg{
-    margin: 1.5em 0em;
+    margin: 4em 0em;
 }
 
 
@@ -124,7 +125,7 @@ fieldset h3 {
 }
 
 .footer-section {
-    float: left;
+    float:left;
     width: 100%;
     height: auto;
 }

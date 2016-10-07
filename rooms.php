@@ -39,5 +39,5 @@
     <hr/>
 </main>
 <?php
-    include_once('views/footer.html');
+    include_once('views/footer.php');
 ?>
