@@ -3,7 +3,7 @@
 
         var url = window.location.pathname.split('/');
         var currentPage = url[url.length - 1];
-        if (currentPage.lastIndexOf('.php')) currentPage = 'index.php';
+        if (currentPage.lastIndexOf('.php') < 0) currentPage = 'index.php';
 
         $('[href="' + currentPage + '"]').addClass('active-page');
 
