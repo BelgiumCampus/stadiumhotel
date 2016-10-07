@@ -31,5 +31,12 @@
                 autoclose: "true"
             });
         })
+        
+        
+          $(function () {
+            $('.clockpicker').clockpicker({
+            donetext: 'Done'
+            });
+        })
     })
 })();

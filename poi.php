@@ -1,8 +1,9 @@
 <?php 
     require('views/header.html');
 ?>
-<main>
+<main class="padding-bottom-lg ">
   <div class="container-fluid">
+<!--
       <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
               <section class="text-center">
@@ -10,10 +11,10 @@
                   <p>
                       The Stadium Hotel is conveniently close to various exciting tourist attractions and significant locations. <br/> The map provides you with a bird's eye view of 10 points of interest within a 10 kilometer radius of the hotel. <br/> Click away!
                   </p>
-                  <hr/>
               </section>
           </div>
       </div>
+-->
       <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="col-lg-6 col-md-6" >
@@ -83,7 +84,6 @@
                           </a> 
                       </div>                              
                   </section>
-                  <hr/>
               </div>
           </div>
       </div>

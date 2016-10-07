@@ -1,65 +1,33 @@
-<main>
-    <div class="row">
-        <div class="col-lg-offset-2 col-lg-8">
-            <div class="col-lg-4 tile-color-3 tile-lg room-tile">
-                <div class="tile-content price">
-                    <h2>Standard Room</h2>
-                    <h6>R500 or R250 per person sharing</h6>
-                </div>
-                <div class="tile-content descr" hidden="">
-                    <p>Standard rooms have a double bed OR two single beds with a full bathroom, a television and a telephone.</p>
-                    <a href="#booking-form" onclick="makeBooking('standard')">Book now <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 tile-color-3 tile-lg room-tile">
-                <div class="tile-content price">
-                    <h2>Student Room</h2>
-                    <h6>R500 or R250 per person sharing</h6>
-                </div>
-                <div class="tile-content descr" hidden="">
-                    <p>Student rooms have two sets of bunk beds and two separate showers, a television and a telephone.</p>
-                    <a href="#booking-form" onclick="makeBooking('student')">Book now <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 tile-color-3 tile-lg room-tile">
-                <div class="tile-content price">
-                    <h2>Suite</h2>
-                    <h6>R600</h6>
-                </div>
-                <div class="tile-content descr" hidden="">
-                    <p>Suites have a double bed and an open plan lounge, kitchenette with en-suite bathroom, a television and a telephone.</p>
-                    <a href="#booking-form" onclick="makeBooking('suite')">Book now <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr/>
+<main class="padding-bottom-lg">
 
     <div class="row">
-        <form class="form-horizontal col-lg-8 col-lg-offset-2 booking-form" id="booking-form">
+        <form data-toggle="validator" class="form-horizontal col-lg-12 booking-form" id="booking-form">
             <fieldset class="">
                 <!-- Form Name -->
                 <h3 class="padding-top-bottom text-center">Book Your Rooms</h3>
                 <div class="padding-top-bottom col-lg-6">
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Contact Person</label>
+                        <label class="col-md-4 control-label" for="contactperson">Contact Person</label>
                         <div class="col-md-7">
-                            <input id="textinput" name="textinput" type="text" placeholder="Contact Person" class="form-control input-md">
+                            <input id="contactperson" name="contactperson" type="text" placeholder="Contact Person" class="form-control input-md" data-error="Please enter a valid name" required>
+                              <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Contact Number</label>
+                        <label class="col-md-4 control-label" for="contactnumber">Contact Number</label>
                         <div class="col-md-7">
-                            <input id="textinput" name="textinput" type="text" placeholder="Contact Number" class="form-control input-md">
+                            <input id="contactnumber" name="contactnumber" type="text" pattern="^[0-9]+$" placeholder="Contact Number" class="form-control input-md" data-error="Please enter a valid contact number" maxlength="10" minlength="10" required>
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Email Address</label>
+                        <label class="col-md-4 control-label" for="email">Email Address</label>
                         <div class="col-md-7">
-                            <input id="textinput" name="textinput" type="text" placeholder="Email Address" class="form-control input-md">
+                            <input id="email" name="email" type="email" placeholder="Email Address" class="form-control input-md" data-error="Please enter a valid email address" required>
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
 
@@ -67,42 +35,45 @@
                 <div class="col-lg-6 padding-top-bottom">
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Room</label>
+                        <label class="col-md-4 control-label" for="room">Room</label>
                         <div class="col-md-7">
-                            <select class="form-control input-md">
-                                <option>Select a room...</option>
-                                <option>Standard</option>
-                                <option>Student</option>
-                                <option>Suite</option>
+                            <select name = "room" class="form-control input-md" required>
+                                <option value="">Select a room...</option>
+                                <option value="standard">Standard</option>
+                                <option value="student">Student</option>
+                                <option value="suite">Suite</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">People</label>
+                        <label class="col-md-4 control-label" for="people">People</label>
                         <div class="col-md-7">
-                            <input id="textinput" name="textinput" type="number" placeholder="How many guests?" class="form-control input-md">
+                            <input id="people" name="people" type="number" min="1" max="2" placeholder="How many guests?" data-error="Please pick a valid number" class="form-control input-md" required>
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <!-- Date input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="appendedcheckbox">From</label>
+                        <label class="col-md-4 control-label" for="fromdate">From</label>
                         <div class="col-md-7">
                             <div class="input-group">
-                                <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder="Arrival">
+                                <input id="fromdate" name="fromdate" class="form-control" type="text" placeholder="Arrival" data-error="Please pick a valid date" required>
                                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <!-- Date input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="appendedcheckbox">To</label>
+                        <label class="col-md-4 control-label" for="todate">To</label>
                         <div class="col-md-7">
                             <div class="input-group">
-                                <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder="Departure">
+                                <input id="todate" name="todate" class="form-control" type="text" placeholder="Departure" data-error="Please pick a valid date" required>
                                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
                 </div>
@@ -113,14 +84,12 @@
                     <div class="col-lg-4">
 
                         <div class="checkbox">
-                            <label for="checkboxes-1">
-                                <input type="checkbox" name="checkboxes1" id="checkboxes-1" value="2"> Adjacent Rooms
-                            </label>
+                           <input type="checkbox" name="checkboxes1" id="checkboxes-1" value="adjacent"> 
+                            <label for="checkboxes-1">Adjacent Rooms</label>
                         </div>
                         <div class="checkbox">
-                            <label for="checkboxes-1">
-                                <input type="checkbox" name="checkboxes1" id="checkboxes-1" value="2"> No Smoking
-                            </label>
+                           <input type="checkbox" name="checkboxes1" id="checkboxes-2" value="nosmoking">
+                            <label for="checkboxes-2">No Smoking</label>
                         </div>
                     </div>
                 </div>
