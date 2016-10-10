@@ -89,12 +89,12 @@
                     <div class="col-lg-4">
 
                         <div class="checkbox">
-                            <input type="checkbox" name="BookRoom[requests][0]" id="checkboxes-001" value="adjacent">
-                            <label for="checkboxes-001">Adjacent Rooms</label>
+                            <input type="checkbox" name="BookRoom[requests][0]" id="request-1" value="Adjacent">
+                            <label for="request-1">Adjacent Rooms</label>
                         </div>
                         <div class="checkbox">
-                            <input type="checkbox" name="BookRoom[requests][1]" id="checkboxes-002" value="nosmoking">
-                            <label for="checkboxes-002">No Smoking</label>
+                            <input type="checkbox" name="BookRoom[requests][1]" id="request-2" value="No smoking">
+                            <label for="request-2">No Smoking</label>
                         </div>
                     </div>
                 </div>

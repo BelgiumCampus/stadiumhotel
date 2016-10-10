@@ -23,13 +23,11 @@
     }
     $('document').ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
-
         var url = window.location.pathname.split('/');
         var urlHref = window.location.href;
         var containsParam = urlHref.indexOf('?') > -1;
         var param = urlHref.substr(urlHref.indexOf('?') + 1);
         var mappedObjs = containsParam ? urlCleaner(param) : [];
-        console.log(mappedObjs);
         mappedObjs.forEach(function (item, i) {
             $('#' + item.name).val(item.value);
         })
