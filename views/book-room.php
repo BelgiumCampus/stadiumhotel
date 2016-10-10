@@ -56,10 +56,17 @@
                 </div>
                 <div class="col-lg-6 padding-top-bottom">
                     <!-- Text input-->
+                     <div class="form-group">
+                        <label class="col-md-4 control-label" for="people">Maxium number of guests</label>
+                        <div class="col-md-7">
+                            <input id="people" name="BookRoom[people]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of people" max="15" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="standardRoom">Standard <i class="fa fa-info-circle" data-toggle="tooltip" title="Standard rooms have a double bed OR two single beds with a full bathroom, a television and a telephone."></i></label>
                         <div class="col-md-7">
-                            <input id="standardRoom" name="BookRoom[standardRoom]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="10" required>
+                            <input id="standardRoom" name="BookRoom[room][standard]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="10" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -68,7 +75,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="studentRoom">Student <i class="fa fa-info-circle" data-toggle="tooltip" title="Student rooms have two sets of bunk beds and two separate showers, a television and a telephone."></i></label>
                         <div class="col-md-7">
-                            <input id="studentRoom" name="BookRoom[studentRoom]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="7" required>
+                            <input id="studentRoom" name="BookRoom[room][student]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="7" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -77,7 +84,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="suiteRoom">Suite <i class="fa fa-info-circle" data-toggle="tooltip" title="Suites have a double bed and an open plan lounge, kitchenette with en-suite bathroom, a television and a telephone."></i></label>
                         <div class="col-md-7">
-                            <input id="suiteRoom" name="BookRoom[suiteRoom]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="5" required>
+                            <input id="suiteRoom" name="BookRoom[room][suite]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="5" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
