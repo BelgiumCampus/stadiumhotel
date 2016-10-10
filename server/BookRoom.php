@@ -33,7 +33,7 @@ class BookRoom extends BookService{
         $this->guests = strip_tags($guests);
         $this->recipients = array('hermenmartins@gmail.com', 'booking@thestadiumhotel.co.za');
         $this->subject = date('YmdHis') . '-' . $this->contactPerson;
-        //$this->duration = ;
+        //$this->duration =  $this->calcDuration($startDate,$endDate);
     }
     
     private function generateHTML(){
