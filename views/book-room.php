@@ -35,7 +35,7 @@
                         <label class="col-md-4 control-label" for="fromdate">From</label>
                         <div class="col-md-7">
                             <div class="input-group date start-date" id="arrivaldatepicker">
-                                <input type="text" name="BookRoom[fromdate]" class=" form-control" value="<?php echo $_GET["arrivedate"]; ?>" placeholder="Arrival" data-error="Please pick a valid date" required>
+                                <input type="text" name="BookRoom[fromdate]" class=" form-control" value="<?php if(!empty($_GET["arrivedate"])) echo $_GET["arrivedate"]; ?>" placeholder="Arrival" data-error="Please pick a valid date" required>
                                 <span class="no-border-radius input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                             <div class="help-block with-errors"></div>
@@ -46,7 +46,7 @@
                         <label class="col-md-4 control-label" for="todate">To</label>
                         <div class="col-md-7">
                             <div class="input-group date start-date" id="departdatepicker">
-                                <input type="text" name="BookRoom[todate]" class=" form-control" value="<?php echo $_GET["departdate"]; ?>" placeholder="Departure" data-error="Please pick a valid date" required>
+                                <input type="text" name="BookRoom[todate]" class=" form-control" value="<?php if(!empty($_GET["departdate"]))  echo $_GET["departdate"]; ?>" placeholder="Departure" data-error="Please pick a valid date" required>
                                 <span class="no-border-radius input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                             <div class="help-block with-errors"></div>
@@ -59,14 +59,14 @@
                      <div class="form-group">
                         <label class="col-md-4 control-label" for="people">Maximum number of guests</label>
                         <div class="col-md-7">
-                            <input id="people" name="BookRoom[people]" value="<?php echo $_GET["people"]; ?>" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of people" max="15" required>
+                            <input id="people" name="BookRoom[people]" value="<?php if(!empty($_GET["people"])) echo $_GET["people"]; ?>" type="number" placeholder="How many rooms?" class="form-control disabled input-md" data-error="Please enter a valid amount of people" max="15" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="standardRoom">Standard <i class="fa fa-info-circle" data-toggle="tooltip" title="Standard rooms have a double bed OR two single beds with a full bathroom, a television and a telephone."></i></label>
                         <div class="col-md-7">
-                            <input id="standard" name="BookRoom[room][standard]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="10" required>
+                            <input id="standard" name="BookRoom[room][standard]" value="<?php if(!empty($_GET["people"])) echo ceil($_GET["people"] / 2); ?>" type="number" placeholder="How many rooms?" class="form-control input-md room-type" data-error="Please enter a valid amount of rooms" min="0" max="10" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -75,16 +75,16 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="studentRoom">Student <i class="fa fa-info-circle" data-toggle="tooltip" title="Student rooms have two sets of bunk beds and two separate showers, a television and a telephone."></i></label>
                         <div class="col-md-7">
-                            <input id="student" name="BookRoom[room][student]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" min="0" max="7" required>
+                            <input id="student" name="BookRoom[room][student]" type="number" placeholder="How many rooms?" class="form-control input-md room-type" data-error="Please enter a valid amount of rooms" min="0" max="7" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
 
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="suiteRoom">Suite <i class="fa fa-info-circle" data-toggle="tooltip" title="Suites have a double bed and an open plan lounge, kitchenette with en-suite bathroom, a television and a telephone."></i></label>
+                        <label class="col-md-4 control-label" for="suite">Suite <i class="fa fa-info-circle" data-toggle="tooltip" title="Suites have a double bed and an open plan lounge, kitchenette with en-suite bathroom, a television and a telephone."></i></label>
                         <div class="col-md-7">
-                            <input id="suite" name="BookRoom[room][suite]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="5" min="0" value="0" required>
+                            <input id="suite" name="BookRoom[room][suite]" type="number" placeholder="How many rooms?" class="form-control input-md room-type" data-error="Please enter a valid amount of rooms" max="5" min="0" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
