@@ -11,7 +11,7 @@
                 </div>
                 <div class="tile-content descr" hidden="">
                     <p>Standard rooms have a double bed OR two single beds with a full bathroom, a television and a telephone.</p>
-                    <a href="booking.php#booking-form" onclick="makeBooking('standard')">Book now <i class="fa fa-arrow-right"></i></a>
+                    <a href="booking.php?room=standard">Book now <i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 tile-color-3 tile-lg room-tile">
@@ -21,7 +21,7 @@
                 </div>
                 <div class="tile-content descr" hidden="">
                     <p>Student rooms have two sets of bunk beds and two separate showers, a television and a telephone.</p>
-                    <a href="booking.php#booking-form" onclick="makeBooking('student')">Book now <i class="fa fa-arrow-right"></i></a>
+                    <a href="booking.php?room=student">Book now <i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 tile-color-3 tile-lg room-tile">
@@ -31,7 +31,7 @@
                 </div>
                 <div class="tile-content descr" hidden="">
                     <p>Suites have a double bed and an open plan lounge, kitchenette with en-suite bathroom, a television and a telephone.</p>
-                    <a href="booking.php#booking-form" onclick="makeBooking('suite')">Book now <i class="fa fa-arrow-right"></i></a>
+                    <a href="booking.php?room=suite">Book now <i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>

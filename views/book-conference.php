@@ -185,7 +185,7 @@
                         </div>
                         <div class="padding-bottom col-md-4">
 
-                            <label class="col-md-4 control-label" for="checkboxes">Dinner</label>
+                            <label class="col-md-4 control-label" for="checkboxes2">Dinner</label>
                             <div class="col-md-12">
 
                                 <div class="checkbox">

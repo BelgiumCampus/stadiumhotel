@@ -356,6 +356,15 @@ input[type="radio"]:disabled+label::before {
     font-size: 1.1em;
 }
 
+.width-100 {
+    width:100% !important;
+}
+
+.margin-top-bottom {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 .padding-top-bottom {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -374,12 +383,27 @@ input[type="radio"]:disabled+label::before {
     padding-right: 20px;
 }
 
+.padding-lr-small {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .padding-right {
     padding-right: 10px;
 }
 
+.no-margin {
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
 .no-padding {
     padding: 0px;
+}
+
+.error-height{
+    height: 15px;
 }
 
 .input-group-addon {

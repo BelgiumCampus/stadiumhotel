@@ -37,7 +37,7 @@
                         <label class="col-md-4 control-label" for="room">Room</label>
                         <div class="col-md-7">
                             <select name="BookRoom[room]" class="form-control input-md" required>
-                                <option value="">Select a room...</option>
+                                <option selected value="default">Select a room...</option>
                                 <option value="standard">Standard</option>
                                 <option value="student">Student</option>
                                 <option value="suite">Suite</option>
@@ -84,11 +84,11 @@
 
                         <div class="checkbox">
                             <input type="checkbox" name="BookRoom[requests][0]" id="checkboxes-1" value="adjacent">
-                            <label for="checkboxes-1">Adjacent Rooms</label>
+                            <label for="checkboxes-001">Adjacent Rooms</label>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" name="BookRoom[requests][1]" id="checkboxes-2" value="nosmoking">
-                            <label for="checkboxes-2">No Smoking</label>
+                            <label for="checkboxes-002">No Smoking</label>
                         </div>
                     </div>
                 </div>
