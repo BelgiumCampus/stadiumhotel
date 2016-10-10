@@ -1,5 +1,12 @@
 <?php
+    require_once 'server/Autoload.php';
     include_once('views/header.html');
+    $bookRoom = null;
+    if(!empty($_POST)) $bookRoom = $_POST['BookRoom'];
+    if(!empty($bookRoom)) {
+        $booking = new BookingService($bookRoom['contactPerson'], $bookRoom['contactNumber'], $bookRoom['email'], $bookRoom['fromdate'],$bookRoom['todate'], $bookRoom['requests'],$bookRoom['room'], $bookRoom['people']);
+        $booking->Book();
+    }
 ?>
     <main class="padding-bottom-lg ">
         <div class="container-fluid">
@@ -29,6 +36,6 @@
         </div>
     </main>
 
-    <?php
+<?php
     include_once('views/footer.php');
 ?>
