@@ -1,6 +1,6 @@
 <main class="padding-bottom-lg">
     <div class="row">
-        <form action="" method="post" name="BookRoom" data-toggle="validator" class="form-horizontal col-lg-12 booking-form" id="booking-form">
+        <form action="" method="post" name="BookRoom" data-toggle="validator" class="form-horizontal col-lg-12 booking-form padding-bottom-lg" id="booking-form">
             <fieldset class="">
                 <!-- Form Name -->
                 <h3 class="padding-top-bottom text-center">Book Your Rooms</h3>
@@ -30,29 +30,6 @@
                         </div>
                     </div>
 
-                </div>
-                <div class="col-lg-6 padding-top-bottom">
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="room">Room</label>
-                        <div class="col-md-7">
-                            <select id="room" name="BookRoom[room]" class="form-control input-md" required>
-                                <option selected value="default">Select a room...</option>
-                                <option value="standard">Standard</option>
-                                <option value="student">Student</option>
-                                <option value="suite">Suite</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="people">People</label>
-                        <div class="col-md-7">
-                            <input id="people" name="BookRoom[people]" type="number" min="1" max="2" placeholder="How many guests?" data-error="Please pick a valid number" class="form-control input-md" required>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
                     <!-- Date input-->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="fromdate">From</label>
@@ -72,6 +49,35 @@
                                 <input id="todate" name="BookRoom[todate]" class=" form-control" type="text" placeholder="Departure" data-error="Please pick a valid date" required>
                                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 padding-top-bottom">
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="standardRoom">Standard <i class="fa fa-info-circle" data-toggle="tooltip" title="Standard rooms have a double bed OR two single beds with a full bathroom, a television and a telephone."></i></label>
+                        <div class="col-md-7">
+                            <input id="standardRoom" name="BookRoom[standardRoom]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="10" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="studentRoom">Student <i class="fa fa-info-circle" data-toggle="tooltip" title="Student rooms have two sets of bunk beds and two separate showers, a television and a telephone."></i></label>
+                        <div class="col-md-7">
+                            <input id="studentRoom" name="BookRoom[studentRoom]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="7" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="suiteRoom">Suite <i class="fa fa-info-circle" data-toggle="tooltip" title="Suites have a double bed and an open plan lounge, kitchenette with en-suite bathroom, a television and a telephone."></i></label>
+                        <div class="col-md-7">
+                            <input id="suiteRoom" name="BookRoom[suiteRoom]" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of rooms" max="5" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>

@@ -22,6 +22,7 @@
         return mappedObjs;
     }
     $('document').ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
         var url = window.location.pathname.split('/');
         var urlHref = window.location.href;
         var containsParam = urlHref.indexOf('?') > -1;
@@ -60,7 +61,6 @@
                 autoclose: "true"
             });
         })
-
 
         $(function () {
             $('.clockpicker').clockpicker({
