@@ -18,7 +18,7 @@
             $('.room-type').each(function (i, e) {
                 currentVal += $(e).val() * 2;
             })
-            $('#people').val(currentVal);
+            $('#people').text(currentVal);
         })
 
         /*Datepickers*/

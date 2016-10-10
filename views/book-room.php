@@ -55,14 +55,7 @@
 
                 </div>
                 <div class="col-lg-6 padding-top-bottom">
-                    <!-- Text input-->
-                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="people">Maximum number of guests</label>
-                        <div class="col-md-7">
-                            <input id="people" name="BookRoom[people]" disabled value="<?php if(!empty($_GET["people"])) echo $_GET["people"]; ?>" type="number" placeholder="Auto-generated field" class="form-control disabled input-md" data-error="Please enter a valid amount of people" max="15" required>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
+                    
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="standardRoom">Standard <i class="fa fa-info-circle" data-toggle="tooltip" title="Standard rooms have a double bed OR two single beds with a full bathroom, a television and a telephone."></i></label>
                         <div class="col-md-7">
@@ -86,6 +79,14 @@
                         <div class="col-md-7">
                             <input id="suite" name="BookRoom[room][suite]" type="number" placeholder="How many rooms?" class="form-control input-md room-type" data-error="Please enter a valid amount of rooms" max="5" min="0" required>
                             <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Text input-->
+                     <div class="form-group">
+                        <label class="col-md-4 control-label" for="people">Guests Allowed</label>
+                        <div class="col-md-7">
+                            <label id="people" name="BookRoom[people]" class="col-md-4 control-label" for="people"><?php if(!empty($_GET["people"])) echo $_GET["people"]; ?></label>
                         </div>
                     </div>
                 </div>
