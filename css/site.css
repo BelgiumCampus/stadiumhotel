@@ -269,7 +269,7 @@ fieldset h3 {
 
 @media only screen and (max-width: 768px) {
     #quickbookbtn {
-        width: 90%;
+        width: 100%;
     }
 }
 
