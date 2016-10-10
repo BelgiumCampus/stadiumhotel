@@ -90,7 +90,7 @@ nav ul {
     border-top: 2px solid #181735;
 }
 nav ul li {
-    width: calc(100% / 5);
+    width: calc(100% / 4);
     float: left;
     padding: 1em;
 }
@@ -173,9 +173,8 @@ fieldset h3 {
 /*BOOTSTRAP*/
 
 .disabled {
-     background-color:darkgrey ;
+    background-color: darkgrey;
 }
-
 .form-control {
     border-radius: 0px;
 }
