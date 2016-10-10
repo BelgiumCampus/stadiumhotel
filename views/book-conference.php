@@ -4,7 +4,7 @@
             <fieldset class="col-lg-12 booking-form">
 
                 <!-- Form Name -->
-                <h3 class="padding-top-bottom text-center">Build your conference</h3>
+                <h3 class="padding-top-bottom text-center">Build Your Conference</h3>
                 <div class="padding-top-bottom col-md-6">
                     <!-- Text input-->
                     <div class="form-group">
@@ -18,7 +18,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="contactperson">Contact Person</label>
                         <div class="col-md-7">
-                            <input id="contactperson" name="contactperson" type="text" placeholder="Contact Person" class="form-control input-md" data-error="Please enter a valid name" required>
+                            <input id="contactperson" name="contactperson" type="text" placeholder="Contact Person" class="form-control input-md" data-error="Please enter a valid name" required autocomplete="name">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="contactnum">Contact Number</label>
                         <div class="col-md-7">
-                            <input id="contactnum" name="contactnum" type="text" pattern="^[0-9]+$" placeholder="Contact Number" data-error="Invalid Phone Number" maxlength="10" minlength="10" class="form-control input-md" required>
+                            <input id="contactnum" name="contactnum" type="text" pattern="^[0-9]+$" placeholder="Contact Number" data-error="Invalid Phone Number" maxlength="10" minlength="10" class="form-control input-md" required autocomplete="tel">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="emailaddress">Email Address</label>
                         <div class="col-md-7">
-                            <input id="emailaddress" name="emailaddress" type="email" placeholder="Email Address" class="form-control input-md" data-error="Invalid Email Address" required>
+                            <input id="emailaddress" name="emailaddress" type="email" placeholder="Email Address" class="form-control input-md" data-error="Invalid Email Address" required autocomplete="email">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
 
                     <!-- Multiple Radios (inline) -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="radios">Preferred Conference Room & Layout:</label>
+                        <label class="col-md-4 control-label" for="radios">Preferred Conference Room &amp; Layout:</label>
                         <div class="padding-bottom col-md-8">
                             <input type="radio" name="radios" id="radios-0" value="Kings Room Cinema Style" required>
                             <label class="padding-right" for="radios-0">Kings Room Cinema Style (60 People)</label>
@@ -203,7 +203,6 @@
 
                 <div class="col-md-8 col-md-offset-2 text-center padding-top-bottom">
                     <input class="padding-left-right no-border-radius btn-lg btn btn-default" type="submit" value="Submit">
-
                 </div>
 
             </fieldset>
