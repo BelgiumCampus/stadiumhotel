@@ -34,9 +34,9 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="fromdate">From</label>
                         <div class="col-md-7">
-                            <div class="input-group" id="book-room-start-date">
-                                <input id="fromdate" name="BookRoom[fromdate]" class=" form-control" type="text" placeholder="Arrival" data-error="Please pick a valid date" required>
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <div class="input-group date start-date" id="arrivaldatepicker">
+                                <input type="text" name="BookRoom[fromdate]" class=" form-control" placeholder="Arrival" data-error="Please pick a valid date" required>
+                                <span class="no-border-radius input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -45,9 +45,9 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="todate">To</label>
                         <div class="col-md-7">
-                            <div class="input-group" id="book-room-end-date">
-                                <input id="todate" name="BookRoom[todate]" class=" form-control" type="text" placeholder="Departure" data-error="Please pick a valid date" required>
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <div class="input-group date start-date" id="departdatepicker">
+                                <input type="text" name="BookRoom[todate]" class=" form-control" placeholder="Departure" data-error="Please pick a valid date" required>
+                                <span class="no-border-radius input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                             <div class="help-block with-errors"></div>
                         </div>

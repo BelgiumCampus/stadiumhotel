@@ -4,7 +4,7 @@
             <fieldset class="col-lg-12 booking-form">
 
                 <!-- Form Name -->
-                <h3 class="padding-top-bottom text-center">Build your conference</h3>
+                <h3 class="padding-top-bottom text-center">Build Your Conference</h3>
                 <div class="padding-top-bottom col-md-6">
                     <!-- Text input-->
                     <div class="form-group">
