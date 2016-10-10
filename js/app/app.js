@@ -23,14 +23,11 @@
     }
     $('document').ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
-
         var url = window.location.pathname.split('/');
         var urlHref = window.location.href;
         var containsParam = urlHref.indexOf('?') > -1;
-        console.log(containsParam);
         var param = urlHref.substr(urlHref.indexOf('?') + 1);
         var mappedObjs = containsParam ? urlCleaner(param) : [];
-        console.log(mappedObjs);
         mappedObjs.forEach(function (item, i) {
             $('#' + item.name).val(item.value);
         })
@@ -47,24 +44,26 @@
         $(function () {
             $('#conferencedatepicker').datepicker({
                 showOn: "both",
-                autoclose: "true"
+                autoclose: "true",
+                format: 'dd/mm/yyyy'
             });
         })
 
         $(function () {
             $('#arrivaldatepicker').datepicker({
                 showOn: "both",
-                autoclose: "true"
+                autoclose: "true",
+                format: 'dd/mm/yyyy'
             });
         })
 
         $(function () {
             $('#departdatepicker').datepicker({
                 showOn: "both",
-                autoclose: "true"
+                autoclose: "true",
+                format: 'dd/mm/yyyy'
             });
         })
-
 
         $(function () {
             $('.clockpicker').clockpicker({

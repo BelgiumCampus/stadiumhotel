@@ -4,7 +4,7 @@
     $bookRoom = null;
     if(!empty($_POST)) $bookRoom = $_POST['BookRoom'];
     if(!empty($bookRoom)) {
-        $booking = new BookingService($bookRoom['contactPerson'], $bookRoom['contactNumber'], $bookRoom['email'], $bookRoom['fromdate'],$bookRoom['todate'], $bookRoom['requests'],$bookRoom['room'], $bookRoom['people']);
+        $booking = new BookRoom($bookRoom['contactPerson'], $bookRoom['contactNumber'], $bookRoom['email'], $bookRoom['fromdate'],$bookRoom['todate'], $bookRoom['requests'],$bookRoom['room'], $bookRoom['people']);
         $booking->Book();
     }
 ?>
