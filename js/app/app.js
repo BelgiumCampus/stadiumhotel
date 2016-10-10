@@ -1,32 +1,39 @@
 (function () {
-    var urlCleaner = function(url) {
+    var urlCleaner = function (url) {
         var mappedObjs = [];
-        if(url.indexOf('&')){
-          var holder = url.split('&');
-          holder.forEach(function(item,i) {
-            var temp = item.split('=');
-            mappedObjs.push({name: temp[0], value:temp[1]});
-          });
-        }
-        else{
+        var multipleParam = url.indexOf('&') > -1;
+        if (multipleParam) {
+            var holder = url.split('&');
+            holder.forEach(function (item, i) {
+                var temp = item.split('=');
+                mappedObjs.push({
+                    name: temp[0],
+                    value: temp[1]
+                });
+            });
+        } else {
             var temp = url.split('=');
-            mappedObjs.push({name: temp[0], value: temp[1]});
-        } 
+            mappedObjs.push({
+                name: temp[0],
+                value: temp[1]
+            });
+        }
+
         return mappedObjs;
     }
     $('document').ready(function () {
 
         var url = window.location.pathname.split('/');
         var urlHref = window.location.href;
-        var param = urlHref.substr(urlHref.indexOf('?')+1);
-        var mappedObjs = urlCleaner(param);
-        mappedObjs.forEach(function(item,i){
-           $('#' + item.name).val(item.value); 
+        var containsParam = urlHref.indexOf('?') > -1;
+        console.log(containsParam);
+        var param = urlHref.substr(urlHref.indexOf('?') + 1);
+        var mappedObjs = containsParam ? urlCleaner(param) : [];
+        console.log(mappedObjs);
+        mappedObjs.forEach(function (item, i) {
+            $('#' + item.name).val(item.value);
         })
-        
-        if(param){
-            console.log(param);
-        }
+
         var currentPage = url[url.length - 1];
         if (currentPage.lastIndexOf('.php') < 0) currentPage = 'index.php';
 
@@ -56,11 +63,11 @@
                 autoclose: "true"
             });
         })
-        
-        
-          $(function () {
+
+
+        $(function () {
             $('.clockpicker').clockpicker({
-            donetext: 'Done'
+                donetext: 'Done'
             });
         })
     })
