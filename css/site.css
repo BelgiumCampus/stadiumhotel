@@ -365,7 +365,7 @@ input[type="radio"]:disabled+label::before {
     background-color: #FDC304 !important;
 }
 .tile-sm {
-    height: 100px;
+    height: 120px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -408,7 +408,7 @@ input[type="radio"]:disabled+label::before {
     color: #F4F4F4;
 }
 .odd-tile {
-    margin-top: -100px;
+    margin-top: -120px;
 }
 .icon {
     font-size: 3em !important;

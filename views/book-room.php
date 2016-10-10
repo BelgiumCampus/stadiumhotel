@@ -35,7 +35,7 @@
                         <label class="col-md-4 control-label" for="fromdate">From</label>
                         <div class="col-md-7">
                             <div class="input-group date start-date" id="arrivaldatepicker">
-                                <input type="text" name="BookRoom[fromdate]" class=" form-control" placeholder="Arrival" data-error="Please pick a valid date" required>
+                                <input type="text" name="BookRoom[fromdate]" class=" form-control" value="<?php echo $_GET["arrivedate"]; ?>" placeholder="Arrival" data-error="Please pick a valid date" required>
                                 <span class="no-border-radius input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                             <div class="help-block with-errors"></div>
@@ -46,7 +46,7 @@
                         <label class="col-md-4 control-label" for="todate">To</label>
                         <div class="col-md-7">
                             <div class="input-group date start-date" id="departdatepicker">
-                                <input type="text" name="BookRoom[todate]" class=" form-control" placeholder="Departure" data-error="Please pick a valid date" required>
+                                <input type="text" name="BookRoom[todate]" class=" form-control" value="<?php echo $_GET["departdate"]; ?>" placeholder="Departure" data-error="Please pick a valid date" required>
                                 <span class="no-border-radius input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                             <div class="help-block with-errors"></div>
@@ -59,7 +59,7 @@
                      <div class="form-group">
                         <label class="col-md-4 control-label" for="people">Maxium number of guests</label>
                         <div class="col-md-7">
-                            <input id="people" name="BookRoom[people]" type="number" disabled placeholder="Auto generated number" class="form-control input-md" data-error="Please enter a valid amount of people" max="15" required>
+                            <input id="people" name="BookRoom[people]" value="<?php echo $_GET["people"]; ?>" disabled type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of people" max="15" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
