@@ -1,6 +1,6 @@
 <main>
     <div class="padding-bottom-lg row">
-        <form data-toggle="validator" class="form-horizontal">
+        <form data-toggle="validator" action="" method="post" class="form-horizontal">
             <fieldset class="col-lg-12 booking-form">
 
                 <!-- Form Name -->
@@ -42,8 +42,8 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="conferencedate">Date</label>
                         <div class="col-md-7">
-                            <div class="input-group date" id="conferencedatepicker">
-                                <input type="text" name="conferencedate" class="form-control" placeholder="Conference Date" data-error="Please pick a valid date" required>
+                            <div class="input-group date start-date" id="conferencedatepicker">
+                                <input type="text" name="conferencedate" class=" form-control" placeholder="Conference Date" data-error="Please pick a valid date" required>
                                 <span class="no-border-radius input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                             <div class="help-block with-errors"></div>
