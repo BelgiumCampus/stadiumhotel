@@ -22,14 +22,11 @@
         return mappedObjs;
     }
     $('document').ready(function () {
-
         var url = window.location.pathname.split('/');
         var urlHref = window.location.href;
         var containsParam = urlHref.indexOf('?') > -1;
-        console.log(containsParam);
         var param = urlHref.substr(urlHref.indexOf('?') + 1);
         var mappedObjs = containsParam ? urlCleaner(param) : [];
-        console.log(mappedObjs);
         mappedObjs.forEach(function (item, i) {
             $('#' + item.name).val(item.value);
         })
