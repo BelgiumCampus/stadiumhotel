@@ -84,12 +84,12 @@
                     <div class="col-lg-4">
 
                         <div class="checkbox">
-                           <input type="checkbox" name="checkboxes1" id="checkboxes-1" value="adjacent"> 
-                            <label for="checkboxes-1">Adjacent Rooms</label>
+                           <input type="checkbox" name="checkboxes1" id="checkboxes-001" value="adjacent"> 
+                            <label for="checkboxes-001">Adjacent Rooms</label>
                         </div>
                         <div class="checkbox">
-                           <input type="checkbox" name="checkboxes1" id="checkboxes-2" value="nosmoking">
-                            <label for="checkboxes-2">No Smoking</label>
+                           <input type="checkbox" name="checkboxes1" id="checkboxes-002" value="nosmoking">
+                            <label for="checkboxes-002">No Smoking</label>
                         </div>
                     </div>
                 </div>
