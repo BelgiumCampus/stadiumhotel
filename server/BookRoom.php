@@ -9,6 +9,7 @@ class BookRoom extends BookService{
     private $requests;
     private $room;
     private $guests;
+    private $duration;
     
     /**
      * Booking Room constructor
@@ -28,10 +29,11 @@ class BookRoom extends BookService{
         $this->startDate = strip_tags($startDate);
         $this->endDate = strip_tags($endDate);
         $this->requests = ($requests);
-        $this->room = strip_tags($room);
+        $this->room = $room;
         $this->guests = strip_tags($guests);
         $this->recipients = array('hermenmartins@gmail.com', 'booking@thestadiumhotel.co.za');
         $this->subject = date('YmdHis') . '-' . $this->contactPerson;
+        //$this->duration = ;
     }
     
     private function generateHTML(){

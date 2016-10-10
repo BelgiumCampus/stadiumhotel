@@ -44,21 +44,24 @@
         $(function () {
             $('#conferencedatepicker').datepicker({
                 showOn: "both",
-                autoclose: "true"
+                autoclose: "true",
+                format: 'dd/mm/yyyy'
             });
         })
 
         $(function () {
             $('#arrivaldatepicker').datepicker({
                 showOn: "both",
-                autoclose: "true"
+                autoclose: "true",
+                format: 'dd/mm/yyyy'
             });
         })
 
         $(function () {
             $('#departdatepicker').datepicker({
                 showOn: "both",
-                autoclose: "true"
+                autoclose: "true",
+                format: 'dd/mm/yyyy'
             });
         })
 
