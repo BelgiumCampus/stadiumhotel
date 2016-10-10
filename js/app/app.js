@@ -37,10 +37,20 @@
 
         $('[href="' + currentPage + '"]').addClass('active-page');
 
+        /*Event Listeners*/
         $('body').on('click', '.mobile-toggle a', function () {
             $('nav ul').toggleClass('show-menu hide-menu');
         })
 
+        $('body').on('change', '.room-type', function(el) {
+            var currentVal = 0;
+            $('.room-type').each(function(i,e) {
+                currentVal += $(e).val() * 2;
+            })
+            $('#people').val(currentVal);
+        })
+        
+        /*Datepickers*/
         $(function () {
             $('#conferencedatepicker').datepicker({
                 showOn: "both",
