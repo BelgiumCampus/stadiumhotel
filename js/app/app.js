@@ -45,7 +45,8 @@
             $('#conferencedatepicker').datepicker({
                 showOn: "both",
                 autoclose: "true",
-                format: 'dd/mm/yyyy'
+                format: 'dd/mm/yyyy',
+                startDate: '+0d'
             });
         })
 
@@ -53,7 +54,12 @@
             $('#arrivaldatepicker').datepicker({
                 showOn: "both",
                 autoclose: "true",
-                format: 'dd/mm/yyyy'
+                format: 'dd/mm/yyyy',
+                startDate: '+0d'
+            }).on('changeDate', function(selected){
+                startDate = new Date(selected.date.valueOf());
+                startDate.setDate(startDate.getDate(new Date(selected.date.valueOf())));
+                $('#departdatepicker').datepicker('setStartDate', startDate);
             });
         })
 
@@ -61,7 +67,12 @@
             $('#departdatepicker').datepicker({
                 showOn: "both",
                 autoclose: "true",
-                format: 'dd/mm/yyyy'
+                format: 'dd/mm/yyyy',
+                startDate: '+0d'
+            }).on('changeDate', function(selected){
+                FromEndDate = new Date(selected.date.valueOf());
+                FromEndDate.setDate(FromEndDate.getDate(new Date(selected.date.valueOf())));
+                $('#arrivaldatepicker').datepicker('setEndDate', FromEndDate);
             });
         })
 

@@ -172,6 +172,10 @@ fieldset h3 {
 
 /*BOOTSTRAP*/
 
+.disabled {
+     background-color:darkgrey ;
+}
+
 .form-control {
     border-radius: 0px;
 }

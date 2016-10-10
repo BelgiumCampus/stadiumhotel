@@ -57,7 +57,7 @@
                 <div class="col-lg-6 padding-top-bottom">
                     <!-- Text input-->
                      <div class="form-group">
-                        <label class="col-md-4 control-label" for="people">Maxium number of guests</label>
+                        <label class="col-md-4 control-label" for="people">Maximum number of guests</label>
                         <div class="col-md-7">
                             <input id="people" name="BookRoom[people]" value="<?php echo $_GET["people"]; ?>" type="number" placeholder="How many rooms?" class="form-control input-md" data-error="Please enter a valid amount of people" max="15" required>
                             <div class="help-block with-errors"></div>
