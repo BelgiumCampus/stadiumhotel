@@ -59,7 +59,7 @@
                      <div class="form-group">
                         <label class="col-md-4 control-label" for="people">Maxium number of guests</label>
                         <div class="col-md-7">
-                            <input id="people" name="BookRoom[people]" value="<?php if(!empty($_GET["people"])) echo $_GET["people"]; ?>" type="number" placeholder="How many rooms?" class="form-control disabled input-md" data-error="Please enter a valid amount of people" max="15" required>
+                            <input id="people" name="BookRoom[people]" disabled value="<?php if(!empty($_GET["people"])) echo $_GET["people"]; ?>" type="number" placeholder="Auto-generated field" class="form-control disabled input-md" data-error="Please enter a valid amount of people" max="15" required>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
