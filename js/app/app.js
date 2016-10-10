@@ -1,30 +1,36 @@
 (function () {
-    var urlCleaner = function(url) {
+    var urlCleaner = function (url) {
         var mappedObjs = [];
-        if(url.indexOf('&')){
-          var holder = url.split('&');
-          holder.forEach(function(item,i) {
-            var temp = item.split('=');
-            mappedObjs.push({name: temp[0], value:temp[1]});
-          });
-        }
-        else{
+        if (url.indexOf('&')) {
+            var holder = url.split('&');
+            holder.forEach(function (item, i) {
+                var temp = item.split('=');
+                mappedObjs.push({
+                    name: temp[0],
+                    value: temp[1]
+                });
+            });
+        } else {
             var temp = url.split('=');
-            mappedObjs.push({name: temp[0], value: temp[1]});
-        } 
+            mappedObjs.push({
+                name: temp[0],
+                value: temp[1]
+            });
+        }
         return mappedObjs;
     }
     $('document').ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
 
         var url = window.location.pathname.split('/');
         var urlHref = window.location.href;
-        var param = urlHref.substr(urlHref.indexOf('?')+1);
+        var param = urlHref.substr(urlHref.indexOf('?') + 1);
         var mappedObjs = urlCleaner(param);
-        mappedObjs.forEach(function(item,i){
-           $('#' + item.name).val(item.value); 
+        mappedObjs.forEach(function (item, i) {
+            $('#' + item.name).val(item.value);
         })
-        
-        if(param){
+
+        if (param) {
             console.log(param);
         }
         var currentPage = url[url.length - 1];
@@ -56,11 +62,11 @@
                 autoclose: "true"
             });
         })
-        
-        
-          $(function () {
+
+
+        $(function () {
             $('.clockpicker').clockpicker({
-            donetext: 'Done'
+                donetext: 'Done'
             });
         })
     })
