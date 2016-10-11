@@ -1,14 +1,8 @@
 <?php
     require_once 'server/Autoload.php';
     include_once('views/header.html');
-    $bookRoom = null;
-    if(!empty($_POST)) $bookRoom = $_POST['BookRoom'];
-    if(!empty($bookRoom)) {
-        $booking = new BookRoom($bookRoom['contactPerson'], $bookRoom['contactNumber'], $bookRoom['email'], $bookRoom['fromdate'],$bookRoom['todate'], $bookRoom['requests'],$bookRoom['room'], $bookRoom['people']);
-        $booking->Book();
-    }
 ?>
-    <main class="padding-bottom-lg ">
+    <main class="padding-bottom-lg main-body">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">

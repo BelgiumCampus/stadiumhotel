@@ -3,7 +3,7 @@
     require('views/header.html');
 
 ?>
-    <main class="container-fluid">
+    <main class="container-fluid main-body">
         <div class="row">
             <div class="col-lg-8 col-md-10 col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-2">
                 <section>
