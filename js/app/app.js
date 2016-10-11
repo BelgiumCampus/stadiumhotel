@@ -9,7 +9,7 @@
         $('[href="' + currentPage + '"]').addClass('active-page');
 
         /*Event Listeners*/
-        $('body').on('click', '.mobile-toggle a', function () {
+        $('body').on('click', '.mobile-toggle', function () {
             $('nav ul').toggleClass('show-menu hide-menu');
         })
 

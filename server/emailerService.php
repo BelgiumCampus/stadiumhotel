@@ -16,9 +16,9 @@ function __construct($recipients, $cc, $subject, $body){
           $this->mailer->isSMTP();
           //$this->mailer->SMTPDebug = 2;
           $this->mailer->SMTPAuth = true;                  // enable SMTP authentication
-          $this->mailer->SMTPSecure = "ssl";                 // sets the prefix to the servier
+          $this->mailer->SMTPSecure = "tls";                 // sets the prefix to the servier
           $this->mailer->Host = "smtp.gmail.com";      // sets GMAIL as the SMTP server
-          $this->mailer->Port = 465;                   // set the SMTP port for the GMAIL server
+          $this->mailer->Port = 587;                   // set the SMTP port for the GMAIL server
           $this->mailer->Username = "thestadiumhotel@gmail.com";  // GMAIL username
           $this->mailer->Password = "@Stadium2016";            // GMAIL password
           $this->mailer->From = "thestadiumhotel@gmail.com";
