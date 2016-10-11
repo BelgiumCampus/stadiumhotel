@@ -38,11 +38,7 @@
 <script src="js/bootstrap-clockpicker.min.js"></script>
 <script src="js/app/app.js"></script>
 <script src="js/booking.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyiTwycmqY48NdJEjR1uDH-eeUgirJdJw&signed_in=true&callback=initMap" async defer></script>
-<script src="js/map.js">
 
-
-</script>
 </body>
 
 </html>
