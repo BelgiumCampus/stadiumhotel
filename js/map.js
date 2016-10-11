@@ -6,15 +6,22 @@ function initMap() {
         lng: 25.603518
     };
 
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: stadiumHotel,
-        zoom: 12
-    });
+    var mapElement = document.getElementById('map');
+    if (mapElement === null) {} else {
+        map = new google.maps.Map(mapElement, {
+            center: stadiumHotel,
+            zoom: 12
+        });
 
-    //the map is limited to 10 markers
-    setMarkers(map, stadiumHotel);
+        //the map is limited to 10 markers
+        setMarkers(map, stadiumHotel);
 
+    }
 
+}
+
+function globalTest() {
+    console.log("If you see this, it's global");
 }
 
 function setMarkers(map, stadiumHotel) {

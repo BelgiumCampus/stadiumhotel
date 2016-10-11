@@ -89,8 +89,7 @@
             </div>
         </div>
     </main>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyiTwycmqY48NdJEjR1uDH-eeUgirJdJw&signed_in=true&callback=initMap" async defer></script>
-    <script src="js/map.js"></script>
+
     <?php
     require('views/footer.php');
 ?>
