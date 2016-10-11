@@ -41,9 +41,13 @@ html {
 
 body {
     position: relative;
-    min-height: 100%;
+    height: 100%;
     width: 100%;
     background-color: rgba(245, 245, 245, 0.4);
+}
+
+body .main-body{
+    min-height: 50%;
 }
 
 header {
