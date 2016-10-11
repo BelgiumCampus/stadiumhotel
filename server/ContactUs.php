@@ -1,7 +1,7 @@
 <?php
 
 class ContactUs{
-    private $recipients = array('hermenmartins@gmail.com',' info@thestadiumhotel.co.za'); /*set to the hotel email address*/
+    private $recipients = array(' info@thestadiumhotel.co.za'); /*set to the hotel email address*/
     private $subject;
     private $message;
     
