@@ -9,7 +9,7 @@
                 <section>
                     <?php include 'views/quickbooking-module.html'; ?>
                 </section>
-                <section class="margin-lg">
+                <section class="">
                     <?php include 'views/tile-module.html'; ?>
                 </section>
             </div>
