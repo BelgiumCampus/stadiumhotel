@@ -36,7 +36,9 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap-datepicker.min.js"></script>
 <script src="js/bootstrap-clockpicker.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyiTwycmqY48NdJEjR1uDH-eeUgirJdJw&callback=initMap" async defer></script>
 <script src="js/app/app.js"></script>
+<script src="js/map.js"></script>
 <script src="js/booking.js"></script>
 
 </body>
