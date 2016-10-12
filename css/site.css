@@ -110,7 +110,7 @@ nav ul {
 }
 
 nav ul li {
-    width: calc(100% / 4);
+    width: calc(100% / 4.0001); /*necessary for IE and Edge*/
     float: left;
     padding: 1em;
 }
